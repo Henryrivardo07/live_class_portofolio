@@ -221,7 +221,26 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@layer components {
+  .custom-container {
+    margin: 0 auto;
+    @apply max-w-302 pr-6 pl-6;
+  }
+}
+
 body {
   @apply bg-base-background text-sm font-normal text-white;
   font-family: var(--font-poppins);
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+  .flex-start {
+    @apply flex items-center justify-start;
+  }
 }
